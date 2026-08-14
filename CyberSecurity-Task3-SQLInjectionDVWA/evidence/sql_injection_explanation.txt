@@ -1,0 +1,15 @@
+Task 3 – SQL Injection Explanation
+
+The DVWA SQL Injection module was tested at the Low security level.
+
+A normal numeric input returned a single user record.
+
+The input:
+
+1' OR '1'='1
+
+caused the application to return multiple user records.
+
+This demonstrates SQL Injection because the supplied input changed the intended SQL query condition and caused the application to return records beyond the originally requested user.
+
+The test was performed locally against the DVWA instance running on Kali Linux.

@@ -1,0 +1,11 @@
+Task 3 – SQL Injection (DVWA)
+Normal Query Test
+
+Input:
+1
+
+Result:
+The application returned the user associated with ID 1.
+
+Purpose:
+This establishes the normal behavior of the SQL Injection input before testing the vulnerability.

