@@ -45,29 +45,21 @@ A typical phishing attack follows this sequence:
 5. **Information theft or execution** – Credentials may be captured or malware may be delivered.
 6. **Follow-on activity** – The attacker may access internal systems, steal data, commit fraud, or deploy ransomware.
 
-### Simple attack flow
+### Phishing Attack Flow
 
-```text
-Attacker
-   |
-   v
-Create convincing lure
-   |
-   v
-Email / SMS / Phone / Social Media
-   |
-   v
-Victim trusts the message
-   |
-   v
-Click / Open / Call / Enter credentials
-   |
-   v
-Credential theft / Malware / Unauthorized access
-   |
-   v
-Data theft / Fraud / Ransomware / Account takeover
+A typical phishing attack begins with a convincing message and gradually attempts to move the victim toward an unsafe action.
+
+```mermaid
+flowchart TD
+    A[Attacker prepares a convincing message] --> B[Message is sent by email, SMS, phone or social media]
+    B --> C[Victim believes the message is legitimate]
+    C --> D[Victim clicks a link, opens an attachment or provides information]
+    D --> E[Credentials or sensitive information are captured]
+    E --> F[Attacker attempts to gain account or system access]
+    F --> G[Possible impact: data theft, fraud, malware or account takeover]
 ```
+
+**Example:** A victim receives an email claiming that their account will be disabled unless they verify it. The link leads to a fake login page designed to collect credentials.
 
 ## 3.3 Major Types of Phishing
 
@@ -166,29 +158,22 @@ MITRE ATT&CK's Social Engineering/Impersonation technique describes how adversar
 
 ## 4.2 How an Attacker Builds a Pretext
 
-A pretexting attack commonly follows these stages:
+### Pretexting Attack Flow
 
-```text
-Reconnaissance
-      |
-      v
-Collect target information
-      |
-      v
-Create believable identity/scenario
-      |
-      v
-Establish trust and authority
-      |
-      v
-Create urgency or confidentiality
-      |
-      v
-Request sensitive action
-      |
-      v
-Victim complies
+Pretexting relies on a believable story or false identity to persuade the victim to disclose information or perform an action.
+
+```mermaid
+flowchart TD
+    A[Attacker researches the target] --> B[Relevant personal or organisational information is collected]
+    B --> C[A believable identity or scenario is created]
+    C --> D[Attacker establishes trust and authority]
+    D --> E[Urgency or confidentiality is introduced]
+    E --> F[A sensitive request is made]
+    F --> G[Victim complies with the request]
+    G --> H[Information or access is obtained]
 ```
+
+**Example:** An attacker pretends to be an IT support employee and claims that an employee's account requires verification. The attacker then attempts to obtain sensitive information.
 
 The attacker may first research the target through public information, company websites, social media, organizational charts, or previously exposed information.
 
@@ -268,28 +253,21 @@ Common examples include:
 - Removable storage labelled "Confidential" or "Salary Information"
 
 A common USB baiting flow is:
+### Baiting Attack Flow
 
-```text
-Malicious USB prepared
-        |
-        v
-USB left in target location
-        |
-        v
-Employee finds USB
-        |
-        v
-Curiosity / perceived value
-        |
-        v
-USB connected to computer
-        |
-        v
-Malicious file or device behavior
-        |
-        v
-Possible malware infection / credential theft
+Baiting uses something attractive or interesting to encourage the victim to interact with malicious content or devices.
+
+```mermaid
+flowchart TD
+    A[Attacker prepares an attractive bait] --> B[Bait is placed where the target may find it]
+    B --> C[Victim discovers the USB, file, link or download]
+    C --> D[Victim believes the bait is useful or interesting]
+    D --> E[Victim opens the file, link or connects the device]
+    E --> F[Malicious activity is triggered]
+    F --> G[Credentials, data or system access may be compromised]
 ```
+
+**Example:** A malicious USB drive is left in an organisation's premises with an interesting label. An employee connects it to a computer, allowing malicious content to execute or attempt to compromise the system.
 
 MITRE ATT&CK documents the security implications of removable media and notes that adversaries have used infected USB devices to move information or commands between systems. [13]
 
@@ -357,24 +335,20 @@ Examples include:
 
 ### Example
 
-```text
-Attacker:
-"I am from IT support. We are fixing your account.
-Give me your verification code so I can complete the upgrade."
+### Quid Pro Quo Attack Flow
 
-        |
-        v
+Quid pro quo attacks exploit the expectation of receiving a benefit in exchange for providing information or performing an action.
 
-Victim trusts the offer
-        |
-        v
-
-Credentials / MFA code disclosed
-        |
-        v
-
-Attacker gains account access
+```mermaid
+flowchart TD
+    A[Attacker offers a service or benefit] --> B[Victim believes the offer is legitimate]
+    B --> C[Attacker requests information or access in return]
+    C --> D[Victim provides the requested information]
+    D --> E[Attacker uses the information or access]
+    E --> F[Account compromise, data theft or other damage may occur]
 ```
+
+**Example:** An attacker claims to provide technical support or an account upgrade and asks the victim to provide credentials or a verification code in return.
 
 ### Prevention
 
