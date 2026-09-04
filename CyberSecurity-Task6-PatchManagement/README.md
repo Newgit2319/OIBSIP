@@ -75,69 +75,88 @@ Deployment
     ↓
 Verification
 ```
-6. Seven-Step Patch Management Checklist
+## 6. Seven-Step Patch Management Checklist
 
 The report provides a prioritized checklist covering:
 
-Maintain an accurate asset inventory.
-Continuously identify vulnerabilities.
-Prioritize vulnerabilities based on risk.
-Test important patches.
-Deploy patches promptly.
-Verify and document patch installation.
-Review exceptions and continuously improve the process.
-7. Patch Management Challenges
+1. Maintain an accurate asset inventory.
+2. Continuously identify vulnerabilities.
+3. Prioritize vulnerabilities based on risk.
+4. Test important patches.
+5. Deploy patches promptly.
+6. Verify and document patch installation.
+7. Review exceptions and continuously improve the process.
+
+---
+
+## 7. Patch Management Challenges
 
 The report discusses challenges such as:
 
-Legacy systems
-Downtime concerns
-Testing requirements
-Large and distributed environments
-Lack of asset visibility
+- Legacy systems
+- Downtime concerns
+- Testing requirements
+- Large and distributed environments
+- Lack of asset visibility
 
 Practical solutions are provided for each challenge.
 
-Key Recommendations
+---
+
+## Key Recommendations
 
 Organizations should:
 
-Maintain an accurate inventory of hardware and software.
-Continuously monitor for newly discovered vulnerabilities.
-Prioritize critical and actively exploited vulnerabilities.
-Test patches appropriately before large-scale deployment.
-Deploy security updates promptly.
-Verify that patches were successfully installed.
-Document systems that cannot be patched.
-Use compensating controls for systems that cannot be immediately updated.
-Continuously review and improve the patch-management process.
-Report
+- Maintain an accurate inventory of hardware and software.
+- Continuously monitor for newly discovered vulnerabilities.
+- Prioritize critical and actively exploited vulnerabilities.
+- Test patches appropriately before large-scale deployment.
+- Deploy security updates promptly.
+- Verify that patches were successfully installed.
+- Document systems that cannot be patched.
+- Use compensating controls for systems that cannot be immediately updated.
+- Continuously review and improve the patch-management process.
+
+---
+
+## Report
 
 The complete research report is available in:
 
-patch_management_report.md
+`patch_management_report.md`
 
-Tools and Technologies
-Markdown
-GitHub
-Git
-References
+---
+
+## Tools and Technologies
+
+- Markdown
+- GitHub
+- Git
+
+---
+
+## References
 
 The research report uses information and guidance from:
 
-National Institute of Standards and Technology (NIST)
-NIST National Vulnerability Database (NVD)
-Cybersecurity and Infrastructure Security Agency (CISA)
-Microsoft Security
-U.S. Federal Trade Commission (FTC)
-Verizon Data Breach Investigations Report (DBIR)
-Ethical Considerations
+- National Institute of Standards and Technology (NIST)
+- NIST National Vulnerability Database (NVD)
+- Cybersecurity and Infrastructure Security Agency (CISA)
+- Microsoft Security
+- U.S. Federal Trade Commission (FTC)
+- Verizon Data Breach Investigations Report (DBIR)
+
+---
+
+## Ethical Considerations
 
 This is a research-based cybersecurity project.
 
 The report does not involve exploiting real systems. Vulnerability assessment and patch-management activities should only be performed on systems owned by an organization or where explicit authorization has been provided.
 
-Conclusion
+---
+
+## Conclusion
 
 Patch management is an essential part of cybersecurity because unpatched vulnerabilities can provide attackers with opportunities to compromise systems.
 
