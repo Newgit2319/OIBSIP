@@ -74,3 +74,73 @@ Testing
 Deployment
     ↓
 Verification
+```
+6. Seven-Step Patch Management Checklist
+
+The report provides a prioritized checklist covering:
+
+Maintain an accurate asset inventory.
+Continuously identify vulnerabilities.
+Prioritize vulnerabilities based on risk.
+Test important patches.
+Deploy patches promptly.
+Verify and document patch installation.
+Review exceptions and continuously improve the process.
+7. Patch Management Challenges
+
+The report discusses challenges such as:
+
+Legacy systems
+Downtime concerns
+Testing requirements
+Large and distributed environments
+Lack of asset visibility
+
+Practical solutions are provided for each challenge.
+
+Key Recommendations
+
+Organizations should:
+
+Maintain an accurate inventory of hardware and software.
+Continuously monitor for newly discovered vulnerabilities.
+Prioritize critical and actively exploited vulnerabilities.
+Test patches appropriately before large-scale deployment.
+Deploy security updates promptly.
+Verify that patches were successfully installed.
+Document systems that cannot be patched.
+Use compensating controls for systems that cannot be immediately updated.
+Continuously review and improve the patch-management process.
+Report
+
+The complete research report is available in:
+
+patch_management_report.md
+
+Tools and Technologies
+Markdown
+GitHub
+Git
+References
+
+The research report uses information and guidance from:
+
+National Institute of Standards and Technology (NIST)
+NIST National Vulnerability Database (NVD)
+Cybersecurity and Infrastructure Security Agency (CISA)
+Microsoft Security
+U.S. Federal Trade Commission (FTC)
+Verizon Data Breach Investigations Report (DBIR)
+Ethical Considerations
+
+This is a research-based cybersecurity project.
+
+The report does not involve exploiting real systems. Vulnerability assessment and patch-management activities should only be performed on systems owned by an organization or where explicit authorization has been provided.
+
+Conclusion
+
+Patch management is an essential part of cybersecurity because unpatched vulnerabilities can provide attackers with opportunities to compromise systems.
+
+Organizations can reduce their attack surface by maintaining accurate asset inventories, identifying vulnerabilities, prioritizing risks, testing patches, deploying updates promptly, and verifying successful remediation.
+
+A structured patch-management process helps reduce the likelihood of data breaches, ransomware attacks, operational disruption, and other security incidents.
